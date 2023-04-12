@@ -1,0 +1,12 @@
+ul li {
+  list-style: none;
+  display: flex;
+
+  align-content: flex-end;
+}
+mat-toolbar {
+
+  display: flex;
+
+
+}

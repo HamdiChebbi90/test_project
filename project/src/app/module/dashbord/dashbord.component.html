@@ -1,0 +1,50 @@
+<div>
+<app-area [data]="bigChart "  ></app-area>
+
+</div>
+
+<br>
+
+<mat-divider>
+
+</mat-divider>
+<br>
+
+<div fxLayout="row" fxLayoutAlign="space-between " fxLayoutGap="20px" class="stats-cards"  >
+
+  <mat-card fxFlex="25">
+    <app-card  label="Usres" total="18k" percentage="50" [data]="cards" ></app-card>
+  </mat-card>
+  <mat-card fxFlex="25">
+    <app-card  label="Usres" total="18k" percentage="50"></app-card>
+  </mat-card>
+  <mat-card fxFlex="25">
+    <app-card  label="Usres" total="18k" percentage="50"></app-card>
+  </mat-card>
+
+
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row" fxLayoutAlign="space-between " fxLayoutGap="20px">
+  <div fxFlex="60">
+
+
+
+<app-table [data]="dataTable"></app-table>
+
+
+  </div>
+  <div fxFlex="40">
+    <app-pie></app-pie>
+  </div>
+
+
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+
+
+

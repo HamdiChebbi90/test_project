@@ -1,0 +1,54 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row >
+
+    <button mat-icon-button (click)="onToggleSideBar()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <span>byesti</span>
+
+    <div fxFlex fxlayout="row" fxLayoutAllign="flex-end" fxLayoutGap="20px" fxLayoutAlign="end center">
+
+      <ul fxLayout="row" fxLayoutGap="20px">
+
+
+           <li>
+          <button mat-icon-button>
+            <mat-icon>settings</mat-icon>
+          </button>
+        </li>
+
+        <li>
+          <button [matMenuTriggerFor]="menu" mat-icon-button>
+            <mat-icon>person_outline</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+
+            <button mat-menu-item>
+              <mat-icon>create</mat-icon>
+              <span>Edit</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>delete</mat-icon>
+              <span>Delete</span>
+            </button>
+
+            <button mat-menu-item>
+              <mat-icon>exit_to_app</mat-icon>
+              <span>Sign out</span>
+            </button>
+
+          </mat-menu>
+
+
+
+
+        </li>
+
+      </ul>
+    </div>
+
+
+  </mat-toolbar-row>
+
+</mat-toolbar>

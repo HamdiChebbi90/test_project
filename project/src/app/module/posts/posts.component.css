@@ -1,0 +1,10 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
